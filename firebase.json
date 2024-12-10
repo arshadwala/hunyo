@@ -11,7 +11,8 @@
         "node_modules",
         ".git",
         "firebase-debug.log",
-        "firebase-debug.*.log"
+        "firebase-debug.*.log",
+        "*.local"
       ],
       "predeploy": [
         "npm --prefix \"$RESOURCE_DIR\" run lint",
@@ -21,11 +22,7 @@
   ],
   "hosting": {
     "public": "dist/spa",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
         "source": "**",
@@ -47,7 +44,7 @@
       "port": 9150
     },
     "hosting": {
-      "port": 5000
+      "port": 5050
     },
     "pubsub": {
       "port": 8085

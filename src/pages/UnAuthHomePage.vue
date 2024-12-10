@@ -65,6 +65,7 @@ import { useQuasar } from 'quasar';
 import { useAuthStore } from 'src/stores/auth-store';
 import { useUserStore } from 'src/stores/user-store';
 import { storeToRefs } from 'pinia';
+import { auth } from 'src/boot/firebase';
 
 const email = ref('');
 const password = ref('');
@@ -79,7 +80,8 @@ const { getUserCompany, addUserDetails } = useUserStore();
 const login = async () => {
   try {
     isLoading.value = true;
-    const auth = getAuth();
+    // const auth = getAuth();
+
     const userCred = await signInWithEmailAndPassword(
       auth,
       email.value,

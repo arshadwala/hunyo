@@ -1,11 +1,7 @@
 {
   "projects": {
-    "default": "hunyo-sending"
+    "default": "hunyo-a4cf1"
   },
   "targets": {},
-  "etags": {
-    "hunyo-sending": {
-      "extensionInstances": {}
-    }
-  }
+  "etags": {}
 }

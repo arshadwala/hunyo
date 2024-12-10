@@ -46,4 +46,4 @@ if (
   connectFunctionsEmulator(functions, 'localhost', 5001);
 }
 
-export { db, storage, auth, functions };
+export { app, db, storage, auth, functions };

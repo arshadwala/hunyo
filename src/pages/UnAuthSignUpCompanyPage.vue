@@ -29,7 +29,7 @@
           >
             <div class="row q-col-gutter-sm">
               <q-input
-                :ref="(el) => addInformationRefs(el as QInput)"
+                :ref="(el: QInput) => addInformationRefs(el as QInput)"
                 :rules="[(val) => !!val || 'This field is required']"
                 v-model="companyName"
                 label="Company Name"
@@ -38,7 +38,7 @@
               />
               <div class="col">
                 <q-input
-                  :ref="(el) => addInformationRefs(el as QInput)"
+                  :ref="(el: QInput) => addInformationRefs(el as QInput)"
                   :rules="[(val) => !!val || 'This field is required']"
                   v-model="name.first"
                   label="First Name"
@@ -48,7 +48,7 @@
               </div>
               <div class="col">
                 <q-input
-                  :ref="(el) => addInformationRefs(el as QInput)"
+                  :ref="(el: QInput) => addInformationRefs(el as QInput)"
                   :rules="[(val) => !!val || 'This field is required']"
                   v-model="name.last"
                   label="Last Name"
@@ -57,7 +57,7 @@
                 />
               </div>
               <q-input
-                :ref="(el) => addInformationRefs(el as QInput)"
+                :ref="(el: QInput) => addInformationRefs(el as QInput)"
                 :rules="[(val) => !!val || 'This field is required']"
                 v-model="email"
                 label="Email"
